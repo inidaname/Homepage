@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Startversity sign up</title>
+	<link rel="stylesheet" type="text/css" href="/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/libs/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
+  <link rel="stylesheet" type="text/css" href="/css/signup.css">
+</head>
+<body>
+  <% include partials/header %>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row" id="sign-in" style="margin-top: 30px;">
+        <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12 lhs_content">
+          <div class="well inner" style= "background-color:white;">
+            <h2 class="text-center">Create account</h2><br/>
+            <form>
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="name" class="form-control" id="formName" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="password">Retype Password</label>
+                <input type="password" class="form-control" id="inputPasswordTwo" placeholder="Retype Password">
+              </div>
+              <div id="submit-button">
+                <button class="btn btn-lg btn-success" id="send">Sign up!</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 rhs_content" style="padding-bottom: 20px;">
+          <div class="well inner" style= "background-color:white;">
+            <h2 class="text-center">Sign in with</h2><br/>
+              <div class="social-btn">
+                <div style="text-align: center;">
+                  <button class="btn btn-lg" style="background-color: black; width: 80%;"><i class="fa fa-github" aria-hidden="true" style="color: white;"></i><span style="color: white;"> Github</span></button>
+                  <hr/>
+                </div>
+                <div style="text-align: center;">
+                  <button class="btn btn-lg" style="background-color: #4267b2; width: 80%;"><i class="fa fa-facebook" aria-hidden="true" style="color: white;"></i><span style="color: white;"> Facebook</span></button>
+                  <hr/>
+                </div>
+                <div style="text-align: center;">
+                  <button class="btn btn-lg" style="background-color: #e0245e; width: 80%;"><i class="fa fa-twitter" aria-hidden="true" style="color: white;"></i></i><span style="color: white;"> Twitter</span></button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/libs/jquery/dist/jquery.min.js"></script>
+</body>
+</html>
