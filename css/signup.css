@@ -25,10 +25,14 @@
 	min-height: 100%;
 }
 
-.form-group label, input {
+.form-group label, .form-group input, .radio-buttons {
 	margin-left: 10%;
 }
 
-input {
+.form-group input {
 	max-width: 80%;
+}
+
+.radio-buttons {
+	margin-bottom: 15px;
 }
