@@ -1,5 +1,24 @@
-.heading {
-	font-family:"Source Sans Pro", sans-serif;
-	font-size:24px;
-	font-weight:500;
+html, body, #page-content-wrapper {
+	background-color: rgba(153, 153, 153, 0.18);
+	font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1.heading {
+	font-size:28px;
+	font-weight: 400;
+}
+
+h2.heading {
+	font-size: 18px;
+	font-weight:300;
+}
+
+#page-content-wrapper p {
+	font-size: 14px;
+	font-weight:300;
+}
+
+.small {
+	font-size: 10px;
+	font-weight:200;
 }
