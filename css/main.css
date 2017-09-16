@@ -1,5 +1,15 @@
 html, body, #page-content-wrapper {
-	background-color: rgba(153, 153, 153, 0.18);
+	background-color: #753a88;
+	font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+#page-content-wrapper p {
+	font-size: 12px;
+}
+
+
+.heading {
 	font-family:"Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -10,6 +20,11 @@ h1.heading {
 
 h2.heading {
 	font-size: 18px;
+	font-weight:300;
+}
+
+h3.heading {
+	font-size: 16px;
 	font-weight:300;
 }
 

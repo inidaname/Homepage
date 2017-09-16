@@ -4,17 +4,59 @@
   <title>Student Dashboard</title>
   <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/studentdashboard.css">
 </head>
 <body>
   <% include partials/sidebar %>
+
   <script type="text/template" id="dashboard-row">
     <div>
       <h1 class="heading" style="margin-bottom: 20px;">Dashboard</h1>
-      <h2 class="heading" style="margin-bottom: 20px;"><span><i class="fa fa-graduation-cap sidebar-icon" aria-hidden="true"></i></span><spam style="margin-left: 15px;">Recommended Courses</spam></h2>
-      <div class="row append-data">
+      <div class="row" style="display: flex;">
+        <div class="col-lg-6 outer">
+          <div class="well dashboard-well">
+            <h2 class="heading">Today's Updates</h2>
+            <h3 class="heading" style="margin-bottom: 30px;">12/10/2017</h3>
+            <table class="table" id="updates-table">
+              <tr>
+                <td><h3 class="heading"><strong>7:00 p.m.</strong></h3></td>
+                <td><h3 class="heading"><strong>Science and Technology</strong></h3><p>Do a class.</p></td>
+                <td><p style="margin-top: 20px;">Present</p></td>
+              </tr>
+              <tr>
+                <td><h3 class="heading"><strong>7:00 p.m.</strong></h3></td>
+                <td><h3 class="heading"><strong>Science and Technology</strong></h3><p>Do a class.</p></td>
+                <td><p style="margin-top: 20px;">Present</p></td>
+              </tr>
+              <tr>
+                <td><h3 class="heading"><strong>7:00 p.m.</strong></h3></td>
+                <td><h3 class="heading"><strong>Science and Technology</strong></h3><p>Do a class.</p></td>
+                <td><p style="margin-top: 20px;">Present</p></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-6 outer" style="height: 100%">
+          <div class="well dashboard-well">
+            <h2 class="heading">Study Progress</h2>
+          </div>
+        </div>   
+      </div>
+      <div class="well dashboard-well">
+        <h2 class="heading" style="margin-bottom: 20px;">Recommended Courses</spam></h2>
+        <div class="row append-data">
+        </div>
       </div>
     </div>
   </script>
+
+<!--   <script type="text/template" id="table-of-updates">
+    <tr>
+      <td><h3 class="heading"><strong>7:00 p.m.</strong></h3></td>
+      <td><h3 class="heading"><strong>Science and Technology</strong></h3><p>Do a class.</p></td>
+      <td><p style="margin-top: 20px;">Present</p></td>
+    </tr>
+  </script> -->
 
   <script type="text/template" id="dashboard-col">
     <div class="col-lg-3 col-sm-4 col-xs-6">
