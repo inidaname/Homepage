@@ -37,3 +37,15 @@ Any changes to the files will be automatically updated with a simple browser ref
 
 To simply build your app from ES6 to ES5 syntax in the `./dist` folder simply run `npm run build` or `yarn build`.
 
+## Making a Change in the Git Repo:
+
+To update your changes in the app and pushing it to the remote git repo follow the instructions:
+1. first go to the folder where you `git clone`d the app 
+2. Then open the terminal inside that folder.
+3. To update your changes, type `git add .`
+4. Commit these changes: `git commit -m "Your Commit Message"`.
+5. Then push it to the git remote repo: `git push origin master`
+
+## Update your local instance of the app
+
+To update your app in sync with the changes made by other contributors. In the app directory, simply type `git pull remote origin`.

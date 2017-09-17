@@ -4,8 +4,8 @@ $(document).ready(function () {
   function toggleForms(button, target) {
     $("#signup-buttons .btn").removeClass("highlight");
     button.addClass("highlight");
-    $(".toggled-content").fadeOut();
-    target.delay(400).fadeIn();
+    $(".toggled-content").hide();
+    target.show();
   }
 
   $("#signup-button").on("click", function () {
