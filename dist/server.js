@@ -8,10 +8,30 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
+var _help = require('./routes/helpCenter/help');
+
+var _help2 = _interopRequireDefault(_help);
+
+var _studentNetwork = require('./routes/studentNetwork/studentNetwork');
+
+var _studentNetwork2 = _interopRequireDefault(_studentNetwork);
+
+var _studentPath = require('./routes/studentPath/studentPath');
+
+var _studentPath2 = _interopRequireDefault(_studentPath);
+
+var _studentProfile = require('./routes/studentProfile/studentProfile');
+
+var _studentProfile2 = _interopRequireDefault(_studentProfile);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//initiating the app
+
+
+//Impoting the Routes
+// Importing the Modules
 var app = (0, _express2.default)();
-// var path = require("path");
 
 app.set('views', _path2.default.join(__dirname, 'views/'));
 app.set('view engine', 'ejs');
@@ -20,42 +40,13 @@ app.get('/', function (req, res) {
 	res.render('signup');
 });
 
-app.get('/studentdashboard', function (req, res) {
-	res.render('studentdashboard');
-});
+// Routes
+app.use('/', _studentProfile2.default);
+app.use('/', _help2.default);
+app.use('./', _studentPath2.default);
+app.use('/', _studentNetwork2.default);
 
-app.get('/studentprofile', function (req, res) {
-	res.render('studentprofile');
-});
-
-app.get('/studentsettings', function (req, res) {
-	res.render('studentsettings');
-});
-
-app.get('/helpcenter', function (req, res) {
-	res.render('helpcenter');
-});
-
-app.get('/studentstudy', function (req, res) {
-	res.render('studentstudy');
-});
-
-app.get('/studentlearn', function (req, res) {
-	res.render('studentlearn');
-});
-
-app.get('/studenttests', function (req, res) {
-	res.render('studenttests');
-});
-
-app.get('/studentresults', function (req, res) {
-	res.render('studentresults');
-});
-
-app.get('/studentnetwork', function (req, res) {
-	res.render('studentnetwork');
-});
-
+// Static Files
 app.use('/', _express2.default.static(__dirname));
 
 app.listen(8080);

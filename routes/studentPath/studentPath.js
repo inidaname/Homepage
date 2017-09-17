@@ -1,5 +1,7 @@
 const router = require('express').Router();
 
+
+
 router.get('/studentstudy', function(req, res) {
     res.render('studentstudy');
 });
@@ -15,5 +17,6 @@ router.get('/studenttests', function(req, res) {
 router.get('/studentresults', function(req, res) {
     res.render('studentresults');
 });
+
 
 module.exports = router;
