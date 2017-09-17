@@ -55,6 +55,10 @@ app.use('/', _studentNetwork2.default);
 // Static Files
 app.use('/', _express2.default.static(__dirname));
 
+app.get("/signup", function (req, res) {
+	res.status(200).send("<h1>Sign Up Submitted</h1>");
+});
+
 // Connect to Database and Start Listening
 console.log("Connecting...");
 _mongodb2.default.connect(dburl, function (err, db) {

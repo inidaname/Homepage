@@ -30,6 +30,10 @@ app.use('/',studentNetwork)
 // Static Files
 app.use('/', express.static(__dirname))
 
+app.get("/signup", function(req, res){
+	res.status(200).send("<h1>Sign Up Submitted</h1>")
+})
+
 // Connect to Database and Start Listening
 console.log("Connecting...")
 MongoClient.connect(dburl, function(err, db){
