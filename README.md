@@ -9,11 +9,11 @@ To run the project, just run `node server.js` from the command line, and you sho
 
 ## Running the App
 
-To run the app you must have [Node](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads)
+You must have [Node](https://nodejs.org/en/download/) and [Git](https://git-scm.com/downloads)
 installed on your local machine or cloud instance.
 
 **optional:**
-*Install **Yarn** if you want to install packages much faster! (Thank you Facebook!).*
+*Install [Yarn](https://yarnpkg.com/en/docs/install) if you want to install packages much faster! (Thank you Facebook!).*
 
 To run the app, type the following command in your shell/command line:
 ```
@@ -29,8 +29,11 @@ To run the app, type the following command in your shell/command line:
 #or
 > yarn dev
 ``` 
+Now open up http://localhost:8080 on your browser. 
+
+Any changes to the files will be automatically updated with a simple browser refresh. There is no need to restart server everytime with [Nodemon](https://nodemon.io/) taking care of that. 
 
 ### Build the app.
 
-To simply build your app in the `./dist` folder simply run `npm run build` or `yarn build`.
+To simply build your app from ES6 to ES5 syntax in the `./dist` folder simply run `npm run build` or `yarn build`.
 
