@@ -1,0 +1,99 @@
+<!-- <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"> -->
+<link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/sidebar.css">
+<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand">
+                        <a href="#home"><span  id="sidebar-head">Startversity</span></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="img-circle" src="https://tse2.mm.bing.net/th?id=OIP.jXZEZl2DRIU3K_uK3X01QQEsEs&pid=15.1" style="width: 25%">
+                            <span class="sidebar-name""> Student Name</span>
+                        </a>
+                    </li>
+                    <li id="dash">
+                        <a href="/studentdashboard" class="short">
+                            <i class="fa fa-tachometer sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Dashboard</span>
+                        </a>
+                    </li id="prof">
+                    <li>
+                        <a href="/studentprofile" class="short">
+                            <i class="fa fa-user sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Profile</span>
+                        </a>
+                    </li>
+                    <li id="sett">
+                        <a href="/studentsettings" class="short">
+                            <i class="fa fa-wrench sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Settings</span>
+                        </a>
+                    </li>
+                    <li  id="help">
+                        <a href="/helpcenter" class="short">
+                            <i class="fa fa-info-circle sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Help Center</span>
+                        </a>
+                    </li>
+                    <li id="l-out">
+                        <a href="/" class="short">
+                            <i class="fa fa-sign-out sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Log Out</span>
+                        </a>
+                    </li>
+                    <li style="background-color: white; margin-top: 10px; height:25px; line-height:25px;">
+                        <span class="sidebar-norm" id="apps-head" style="font-size: 12px;">STUDENT APPS</span>
+                    </li>
+                    <li  id="stud">
+                        <a href="/studentstudy" class="short">
+                            <i class="fa fa-graduation-cap sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Study</span><span class="badge">42</span>
+                        </a>
+                    </li>
+                    <li  id="lear">
+                        <a href="/studentstudy" class="short">
+                            <i class="fa fa-leanpub sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Learn</span>
+                        </a>
+                    </li>
+                    <li  id="test">
+                        <a href="/studenttests" class="short">
+                            <i class="fa fa-pencil sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Tests</span><span class="badge">2</span>
+                        </a>
+                    </li>
+                    <li  id="res">
+                        <a href="/studentresults" class="short">
+                            <i class="fa fa-star sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Results</span>
+                        </a>
+                    </li>
+                    <li  id="netw">
+                        <a href="/studentnetwork" class="short">
+                            <i class="fa fa-share-square sidebar-icon" aria-hidden="true"></i><span class="sidebar-norm">Network</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Page content -->
+    <div id="page-content-wrapper" class="">
+      <div class="content-header">
+        <h3 id="home" class="" style="margin-top: 0px;">
+          <a id="menu-toggle" href="#">
+            <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
+          </a>
+        </h3>
+      </div>
+        <div class="page-content inset">
+          <!-- Page content -->
+            <!-- Page content -->
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+     $("#menu-toggle").click(function(e) {
+         e.preventDefault();
+         $("#wrapper").toggleClass("active");
+     });
+    </script>
