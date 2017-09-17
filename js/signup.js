@@ -1,10 +1,9 @@
 $(document).ready(function(){
   function toggleForms(button, target){
-    console.log(target);
     $("#signup-buttons .btn").removeClass("highlight");
     button.addClass("highlight");
     $(".toggled-content").fadeOut();
-    target.fadeIn();
+    target.delay(400).fadeIn();
   }
   
   $("#signup-button").on("click", function(){
