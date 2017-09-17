@@ -24,18 +24,18 @@ app.get('/', function(req, res){
 // Routes
 app.use('/',studentProfile)
 app.use('/', helpCenter)
-app.use('./', studentPath)
+app.use('/', studentPath)
 app.use('/',studentNetwork)
 
 // Static Files
 app.use('/', express.static(__dirname))
 
 app.get("/signup", function(req, res){
-	res.redirect("/studentProfile")
+	res.redirect("/studentprofile")
 })
 
 app.get("/login", function(req, res){
-	res.redirect("/studentProfile")
+	res.redirect("/studentprofile")
 })
 
 // Connect to Database and Start Listening

@@ -49,14 +49,18 @@ app.get('/', function (req, res) {
 // Routes
 app.use('/', _studentProfile2.default);
 app.use('/', _help2.default);
-app.use('./', _studentPath2.default);
+app.use('/', _studentPath2.default);
 app.use('/', _studentNetwork2.default);
 
 // Static Files
 app.use('/', _express2.default.static(__dirname));
 
 app.get("/signup", function (req, res) {
-	res.redirect("/studentProfile");
+	res.redirect("/studentprofile");
+});
+
+app.get("/login", function (req, res) {
+	res.redirect("/studentprofile");
 });
 
 // Connect to Database and Start Listening
