@@ -56,7 +56,7 @@ app.use('/', _studentNetwork2.default);
 app.use('/', _express2.default.static(__dirname));
 
 app.get("/signup", function (req, res) {
-	res.status(200).send("<h1>Sign Up Submitted</h1>");
+	res.redirect("/studentProfile");
 });
 
 // Connect to Database and Start Listening

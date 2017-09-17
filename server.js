@@ -31,7 +31,11 @@ app.use('/',studentNetwork)
 app.use('/', express.static(__dirname))
 
 app.get("/signup", function(req, res){
-	res.status(200).send("<h1>Sign Up Submitted</h1>")
+	res.redirect("/studentProfile")
+})
+
+app.get("/login", function(req, res){
+	res.redirect("/studentProfile")
 })
 
 // Connect to Database and Start Listening
