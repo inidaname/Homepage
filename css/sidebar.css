@@ -1,6 +1,6 @@
 div.content-header {
-  min-height: 65px !important;
-  max-height: 65px !important;
+  min-height: 65px;
+  max-height: 65px;
   background-color: #367fa9;
 }
 
