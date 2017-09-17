@@ -1,13 +1,13 @@
 // Importing the Modules
-import express from 'express'
-import path from 'path'
-import MongoClient from 'mongodb'
+const express = require('express')
+const path = require ('path')
+const MongoClient = require('mongodb')
 
 //Impoting the Routes
-import helpCenter from './routes/helpCenter/help'
-import studentNetwork from './routes/studentNetwork/studentNetwork'
-import studentPath from './routes/studentPath/studentPath'
-import studentProfile from './routes/studentProfile/studentProfile'
+const helpCenter = require('./routes/helpCenter/help')
+const studentNetwork = require('./routes/studentNetwork/studentNetwork')
+const studentPath = require('./routes/studentPath/studentPath')
+const studentProfile = require('./routes/studentProfile/studentProfile')
 
 //initiating the app
 const app = express()

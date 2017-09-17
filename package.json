@@ -5,15 +5,12 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./ --out-dir dist/ --ignore ./libs,./dist,./node_modules,./.babelrc,./package.json,./package-lock.json,./npm-debug.log,./yarn.lock --copy-files",
-    "dev": "node_modules/.bin/nodemon --watch server.js --watch css --watch js --watch routes--exec \"npm run build && node dist/server.js\"",
-    "start": "node dist/server.js"
+    "dev": "node_modules/.bin/nodemon --watch server.js --watch css --watch js --watch routes --exec \"node server.js\"",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
     "bootstrap": "^3.3.7",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
