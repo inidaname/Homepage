@@ -8,6 +8,10 @@ var _path = require('path');
 
 var _path2 = _interopRequireDefault(_path);
 
+var _mongodb = require('mongodb');
+
+var _mongodb2 = _interopRequireDefault(_mongodb);
+
 var _help = require('./routes/helpCenter/help');
 
 var _help2 = _interopRequireDefault(_help);
@@ -30,8 +34,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 
 //Impoting the Routes
-// Importing the Modules
-var app = (0, _express2.default)();
+var app = (0, _express2.default)(); // Importing the Modules
+
+var dburl = "mongodb://F0OHiaRgQFk8:4jZ9AQIrt3ss@ds139954.mlab.com:39954/startversity";
+var database;
 
 app.set('views', _path2.default.join(__dirname, 'views/'));
 app.set('view engine', 'ejs');
@@ -49,5 +55,14 @@ app.use('/', _studentNetwork2.default);
 // Static Files
 app.use('/', _express2.default.static(__dirname));
 
-app.listen(8080);
-console.log('running on port 8080');
+// Connect to Database and Start Listening
+console.log("Connecting...");
+_mongodb2.default.connect(dburl, function (err, db) {
+	if (err) throw err;
+
+	database = db;
+
+	app.listen(8080, function () {
+		console.log('running on port 8080');
+	});
+});
