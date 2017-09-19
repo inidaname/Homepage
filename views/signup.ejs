@@ -31,30 +31,30 @@
           <div class="toggled-content" id="signup-content">
             <form action="/signup", method="get">
               <div class="form-group">
-                <input type="name" class="form-control" id="inputName" placeholder="Name">
+                <input type="name" class="form-control" id="inputName" placeholder="Name" name="name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
               </div>
               <div class="radio-container">
                 <div style="margin-bottom: 5px;">
                 </div>
                 <label class="radio-inline">
-                  <input type="radio" name="inlineRadioOptions" class="student-choice" value="option1"> Student
+                  <input type="radio" name="inlineRadioOptions" class="student-choice" value="student"> Student
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="inlineRadioOptions" id="tutor-choice" value="option2"> Teacher
+                  <input type="radio" name="inlineRadioOptions" id="tutor-choice" value="teacher"> Teacher
                 </label>
                 <label class="radio-inline">
-                  <input type="radio" name="inlineRadioOptions" id="content-creator-choice" value="option3"> Content Creator
+                  <input type="radio" name="inlineRadioOptions" id="content-creator-choice" value="creator"> Content Creator
                 </label>
               </div>
             <div class="form-inline" style="margin-bottom: 15px;">
               <div class="form-group" style="width: 49%;">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password" style="width: 100%">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" style="width: 100%" name="password">
               </div>
               <div class="form-group" style="width: 50%;">
-                <input type="password" class="form-control" id="re-inputPassword" placeholder="Retype Password" style="width: 100%">
+                <input type="password" class="form-control" id="re-inputPassword" placeholder="Retype Password" style="width: 100%" name="cPassword">
               </div>
                           </div>
               <div id="signup-submit-div">

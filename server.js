@@ -31,6 +31,11 @@ app.use('/',studentNetwork)
 app.use('/', express.static(__dirname))
 
 app.get("/signup", function(req, res){
+	console.log(req.query.name)
+	console.log(req.query.email)
+	console.log(req.query.inlineRadioOptions)
+	console.log(req.query.password)
+	console.log(req.query.cPassword)
 	res.redirect("/studentprofile")
 })
 
