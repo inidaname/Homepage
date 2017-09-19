@@ -31,11 +31,17 @@ app.use('/',studentNetwork)
 app.use('/', express.static(__dirname))
 
 app.get("/signup", function(req, res){
-	console.log(req.query.name)
-	console.log(req.query.email)
-	console.log(req.query.inlineRadioOptions)
-	console.log(req.query.password)
-	console.log(req.query.cPassword)
+	let userName = req.query.name
+	let userEmail = req.query.email
+	let userType = req.query.type
+	let userPassword = req.query.password
+	let passwordConfirm = req.query.cPassword
+
+	// 	Validate User Input
+	//	Hash Password
+	//	Add to DB
+	//	Create User Session
+
 	res.redirect("/studentprofile")
 })
 
